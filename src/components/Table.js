@@ -88,8 +88,8 @@ export default function Table(game) {
   const players = !game.gameMetadata
     ? []
     : game.gameMetadata
-        .filter((p) => p.name)
-        .map((p) => ({ ...p, id: String(p.id) }));
+      .filter((p) => p.name)
+      .map((p) => ({ ...p, id: String(p.id) }));
   // host is lowest active user
   const firstPlayer =
     get(
